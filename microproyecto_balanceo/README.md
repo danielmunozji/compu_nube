@@ -32,9 +32,9 @@ El objetivo es **garantizar tolerancia a fallos y distribución de carga automá
    ```bash
    git clone https://github.com/daniel_munozji/microproyecto-balanceo.git
    cd microproyecto-balanceo
-# 🌐 Microproyecto: Balanceo de Carga con HAProxy y Consul
+#  Microproyecto: Balanceo de Carga con HAProxy y Consul
 
-## 📖 Descripción
+##  Descripción
 Este microproyecto implementa un entorno distribuido donde se utiliza **HAProxy** como balanceador de carga y **Consul** como servicio de descubrimiento dinámico.  
 En este entorno, se despliegan múltiples instancias de una aplicación Node.js en la máquina `clienteUbuntu`, y las peticiones se balancean a través de `servidorUbuntu`.
 
@@ -42,7 +42,7 @@ El objetivo es **garantizar tolerancia a fallos y distribución de carga automá
 
 ---
 
-## 🏗️ Arquitectura del Sistema
+##  Arquitectura del Sistema
 - **Servidor (servidorUbuntu)**
   - Consul Server
   - HAProxy (balanceador de carga)
@@ -52,7 +52,7 @@ El objetivo es **garantizar tolerancia a fallos y distribución de carga automá
 
 ---
 
-## ⚙️ Requerimientos
+##  Requerimientos
 - [Vagrant](https://developer.hashicorp.com/vagrant)  
 - [VirtualBox](https://www.virtualbox.org/)  
 - Node.js (para ejecutar Artillery en el host)  
@@ -115,13 +115,8 @@ Ejemplo para ejecutar un test:
 artillery run tests/load-test.yml -o tests/report.json
 npx artillery report tests/report.json
 
-##Interfaces Web
 
-HAProxy Stats: http://192.168.100.3:8080
-
-Consul UI: http://192.168.100.3:8500/ui
-
-Interfaces Web
+## Interfaces Web
 
 HAProxy Stats: http://192.168.100.3:8080
 
