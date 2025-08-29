@@ -1,0 +1,18 @@
+config:
+  target: "http://192.168.100.3"
+  phases:
+    - duration: 20
+      arrivalRate: 5
+    - duration: 20
+      arrivalRate: 10
+    - duration: 20
+      arrivalRate: 20
+scenarios:
+  - name: "trafico-root"
+    flow:
+      - get:
+          url: "/"
+  - name: "trafico-health"
+    flow:
+      - get:
+          url: "/health"

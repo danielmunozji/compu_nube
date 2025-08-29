@@ -1,0 +1,14 @@
+config:
+  target: "http://192.168.100.3"
+  phases:
+    - duration: 30
+      arrivalRate: 10
+    - duration: 30
+      arrivalRate: 20
+    - duration: 30
+      arrivalRate: 40
+scenarios:
+  - name: "trafico-basico"
+    flow:
+      - get:
+          url: "/"

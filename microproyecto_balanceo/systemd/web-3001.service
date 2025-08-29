@@ -1,0 +1,11 @@
+[Unit]
+Description=Web App 3001
+After=network.target
+
+[Service]
+Environment=PORT=3001
+ExecStart=/usr/bin/node /opt/app/server.js
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

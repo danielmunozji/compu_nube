@@ -1,0 +1,17 @@
+config:
+  target: "http://192.168.100.3"
+  phases:
+    # 0-20s: estable con 15 rps
+    - duration: 20
+      arrivalRate: 15
+    # 20-40s: sube a 30 rps (aquí pararemos un backend)
+    - duration: 20
+      arrivalRate: 30
+    # 40-60s: mantenemos 30 rps (aquí lo volveremos a levantar)
+    - duration: 20
+      arrivalRate: 30
+scenarios:
+  - name: "root-only"
+    flow:
+      - get:
+          url: "/"

@@ -1,0 +1,13 @@
+{
+  "service": {
+    "id": "web-3002",
+    "name": "web",
+    "address": "192.168.100.2",
+    "port": 3002,
+    "check": {
+      "http": "http://127.0.0.1:3002/health",
+      "interval": "5s",
+      "timeout": "2s"
+    }
+  }
+}

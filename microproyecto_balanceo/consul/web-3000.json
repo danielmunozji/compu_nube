@@ -1,0 +1,11 @@
+server = false
+node_name = "clienteUbuntu"
+datacenter = "dc1"
+data_dir = "/opt/consul"
+
+bind_addr      = "192.168.100.2"
+client_addr    = "0.0.0.0"
+advertise_addr = "192.168.100.2"
+retry_join     = ["192.168.100.3"]
+
+ports { dns = 8600 }

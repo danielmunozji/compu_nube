@@ -1,0 +1,4 @@
+﻿"Report","Requests","Responses","RPS_Avg","Latency_p50_ms","Latency_p95_ms","Latency_p99_ms","VUsers_Failed","HTTP_5xx"
+"report.json","2100","1937",,"497,8","4965,3","9416,8","163","0"
+"report-health.json","700","700",,"8,9","25,8","87,4","0","0"
+"report-failure.json","1500","1500",,"16,9","232,8","685,5","0","0"
